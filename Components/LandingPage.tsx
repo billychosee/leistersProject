@@ -53,8 +53,7 @@ function Body() {
         altStatue="Statue" 
         altSkyBet="Sky Bet Logo" 
         titleText="Sky Bet CHAMPIONS"
-        bgColor="bg-white" 
-        textColor="text-darkBlue"
+
       />
     </div>
 
