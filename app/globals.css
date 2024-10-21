@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+
+    /* styles/fonts.css */  
+@font-face {  
+  font-family: 'Deutschlander';  
+  src: url('/fonts/Deutschlander.woff2') format('woff2'), /* Super Modern Browsers */  
+       url('/fonts/Deutschlander.woff') format('woff'); /* Modern Browsers */  
+  font-weight: normal; /* Adjust as needed */  
+  font-style: normal; /* Adjust as needed */  
+}
+
+@font-face {
+  font-family: 'Reem Kufi Fun';
+  src: url('/fonts/ReemKufiFun-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Adjust this range based on the weights available in your variable font */
+  font-style: normal; /* Change this if your font has italic styles */
+}
+
+/* globals.css or a global CSS file */
+@font-face {
+  font-family: 'Chillax';
+  src: url('/fonts/Chillax-Variable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
